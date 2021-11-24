@@ -43,7 +43,7 @@ export const RestaurantInfoCard = ({ restaurant = {} }) => {
                 xml={star}
                 width={20}
                 height={20}
-                // key={JSON.stringify(Math.random())}
+                key={JSON.stringify(Math.random())}
               />
             ))}
           </Rating>

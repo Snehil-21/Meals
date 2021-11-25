@@ -26,10 +26,11 @@ export const RestaurantInfoCard = ({ restaurant = {} }) => {
     address = "Some Street",
     isOpenNow = true,
     rating = 4,
-    isClosedTemporarily = true,
+    isClosedTemporarily = false,
   } = restaurant;
 
-  const ratingArray = Array.from(new Array(rating));
+  const ratingArray = Array.from(new Array(Math.round(rating)));
+  // console.log(restaurant);
 
   return (
     <CardContainer>
